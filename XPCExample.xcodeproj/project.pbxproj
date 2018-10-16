@@ -11,7 +11,36 @@
 		DFF7C5B0217580AE003ABEC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7C5AF217580AE003ABEC4 /* ViewController.swift */; };
 		DFF7C5B2217580AF003ABEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF7C5B1217580AF003ABEC4 /* Assets.xcassets */; };
 		DFF7C5B5217580AF003ABEC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF7C5B3217580AF003ABEC4 /* Main.storyboard */; };
+		DFF7C5C6217581C7003ABEC4 /* XPCServiceExampleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7C5C5217581C7003ABEC4 /* XPCServiceExampleDelegate.swift */; };
+		DFF7C5C8217581C7003ABEC4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7C5C7217581C7003ABEC4 /* main.swift */; };
+		DFF7C5CC217581C7003ABEC4 /* XPCServiceExample.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = DFF7C5C1217581C7003ABEC4 /* XPCServiceExample.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFF7C5D12175A642003ABEC4 /* XPCServiceExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7C5C4217581C7003ABEC4 /* XPCServiceExample.swift */; };
+		DFF7C5D22175A642003ABEC4 /* XPCServiceExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7C5C3217581C7003ABEC4 /* XPCServiceExampleProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFF7C5CA217581C7003ABEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF7C5A2217580AE003ABEC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF7C5C0217581C7003ABEC4;
+			remoteInfo = XPCServiceExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFF7C5D0217581C7003ABEC4 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				DFF7C5CC217581C7003ABEC4 /* XPCServiceExample.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DFF7C5AA217580AE003ABEC4 /* XPCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +50,23 @@
 		DFF7C5B4217580AF003ABEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFF7C5B6217580AF003ABEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF7C5B7217580AF003ABEC4 /* XPCExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCExample.entitlements; sourceTree = "<group>"; };
+		DFF7C5C1217581C7003ABEC4 /* XPCServiceExample.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCServiceExample.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF7C5C3217581C7003ABEC4 /* XPCServiceExampleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceExampleProtocol.swift; sourceTree = "<group>"; };
+		DFF7C5C4217581C7003ABEC4 /* XPCServiceExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceExample.swift; sourceTree = "<group>"; };
+		DFF7C5C5217581C7003ABEC4 /* XPCServiceExampleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceExampleDelegate.swift; sourceTree = "<group>"; };
+		DFF7C5C7217581C7003ABEC4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DFF7C5C9217581C7003ABEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DFF7C5A7217580AE003ABEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF7C5BE217581C7003ABEC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF7C5AC217580AE003ABEC4 /* XPCExample */,
+				DFF7C5C2217581C7003ABEC4 /* XPCServiceExample */,
 				DFF7C5AB217580AE003ABEC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF7C5AA217580AE003ABEC4 /* XPCExample.app */,
+				DFF7C5C1217581C7003ABEC4 /* XPCServiceExample.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +107,18 @@
 			path = XPCExample;
 			sourceTree = "<group>";
 		};
+		DFF7C5C2217581C7003ABEC4 /* XPCServiceExample */ = {
+			isa = PBXGroup;
+			children = (
+				DFF7C5C7217581C7003ABEC4 /* main.swift */,
+				DFF7C5C4217581C7003ABEC4 /* XPCServiceExample.swift */,
+				DFF7C5C5217581C7003ABEC4 /* XPCServiceExampleDelegate.swift */,
+				DFF7C5C3217581C7003ABEC4 /* XPCServiceExampleProtocol.swift */,
+				DFF7C5C9217581C7003ABEC4 /* Info.plist */,
+			);
+			path = XPCServiceExample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +129,34 @@
 				DFF7C5A6217580AE003ABEC4 /* Sources */,
 				DFF7C5A7217580AE003ABEC4 /* Frameworks */,
 				DFF7C5A8217580AE003ABEC4 /* Resources */,
+				DFF7C5D0217581C7003ABEC4 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DFF7C5CB217581C7003ABEC4 /* PBXTargetDependency */,
 			);
 			name = XPCExample;
 			productName = XPCExample;
 			productReference = DFF7C5AA217580AE003ABEC4 /* XPCExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DFF7C5C0217581C7003ABEC4 /* XPCServiceExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF7C5CD217581C7003ABEC4 /* Build configuration list for PBXNativeTarget "XPCServiceExample" */;
+			buildPhases = (
+				DFF7C5BD217581C7003ABEC4 /* Sources */,
+				DFF7C5BE217581C7003ABEC4 /* Frameworks */,
+				DFF7C5BF217581C7003ABEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCServiceExample;
+			productName = XPCServiceExample;
+			productReference = DFF7C5C1217581C7003ABEC4 /* XPCServiceExample.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +169,9 @@
 				ORGANIZATIONNAME = "Bumseok Lee";
 				TargetAttributes = {
 					DFF7C5A9217580AE003ABEC4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DFF7C5C0217581C7003ABEC4 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -112,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				DFF7C5A9217580AE003ABEC4 /* XPCExample */,
+				DFF7C5C0217581C7003ABEC4 /* XPCServiceExample */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +202,13 @@
 			files = (
 				DFF7C5B2217580AF003ABEC4 /* Assets.xcassets in Resources */,
 				DFF7C5B5217580AF003ABEC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF7C5BF217581C7003ABEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +224,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFF7C5BD217581C7003ABEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF7C5C8217581C7003ABEC4 /* main.swift in Sources */,
+				DFF7C5D12175A642003ABEC4 /* XPCServiceExample.swift in Sources */,
+				DFF7C5C6217581C7003ABEC4 /* XPCServiceExampleDelegate.swift in Sources */,
+				DFF7C5D22175A642003ABEC4 /* XPCServiceExampleProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFF7C5CB217581C7003ABEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF7C5C0217581C7003ABEC4 /* XPCServiceExample */;
+			targetProxy = DFF7C5CA217581C7003ABEC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DFF7C5B3217580AF003ABEC4 /* Main.storyboard */ = {
@@ -305,6 +410,38 @@
 			};
 			name = Release;
 		};
+		DFF7C5CE217581C7003ABEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L75WVXX68A;
+				INFOPLIST_FILE = XPCServiceExample/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.gwbs.apps.XPCServiceExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		DFF7C5CF217581C7003ABEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L75WVXX68A;
+				INFOPLIST_FILE = XPCServiceExample/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.gwbs.apps.XPCServiceExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +459,15 @@
 			buildConfigurations = (
 				DFF7C5BB217580AF003ABEC4 /* Debug */,
 				DFF7C5BC217580AF003ABEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF7C5CD217581C7003ABEC4 /* Build configuration list for PBXNativeTarget "XPCServiceExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF7C5CE217581C7003ABEC4 /* Debug */,
+				DFF7C5CF217581C7003ABEC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
