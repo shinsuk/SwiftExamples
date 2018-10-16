@@ -7,13 +7,24 @@
 //
 
 import Cocoa
+import XPCServiceExample
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let connection = NSXPCConnection(serviceName: "net.gwbs.apps.XPCServiceExample")
+        connection.remoteObjectInterface = NSXPCInterface(with: XPCServiceExampleProtocol.self)
+        connection.resume()
+
+        let service = connection.remoteObjectProxyWithErrorHandler { (error) in
+            print("Received error:", error)
+        } as? XPCServiceExampleProtocol
+
+        service?.upperCaseString("hello XPC", withReply: { (response) in
+            print("Response from XPC service:", response)
+        })
     }
 
     override var representedObject: Any? {

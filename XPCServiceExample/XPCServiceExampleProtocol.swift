@@ -10,5 +10,5 @@ import Foundation
 
 @objc
 public protocol XPCServiceExampleProtocol {
-    func upperCaseString(_ string: String, withReply reply: (String) -> Void)
+    func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void)
 }

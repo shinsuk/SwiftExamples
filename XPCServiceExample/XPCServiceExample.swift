@@ -9,7 +9,7 @@
 import Foundation
 
 class XPCServiceExample: NSObject, XPCServiceExampleProtocol {
-    func upperCaseString(_ string: String, withReply reply: (String)->Void) {
+    func upperCaseString(_ string: String, withReply reply: @escaping (String) -> Void ) {
         let response = string.uppercased()
         reply(response)
     }

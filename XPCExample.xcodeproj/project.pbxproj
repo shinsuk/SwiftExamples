@@ -173,6 +173,7 @@
 					};
 					DFF7C5C0217581C7003ABEC4 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -417,6 +418,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L75WVXX68A;
 				INFOPLIST_FILE = XPCServiceExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.gwbs.apps.XPCServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -433,6 +435,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L75WVXX68A;
 				INFOPLIST_FILE = XPCServiceExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.gwbs.apps.XPCServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
